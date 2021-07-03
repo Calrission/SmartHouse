@@ -65,7 +65,7 @@
         android:id="@+id/tra_profile"
         app:duration="1000" >
         <OnSwipe
-            app:touchAnchorId="@id/foreground"
+            app:touchAnchorId="@id/scroll_profile"
             app:dragDirection="dragUp"/>
     </Transition>
 </MotionScene>
