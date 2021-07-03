@@ -1,53 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBack">
+    android:background="@color/colorBack"
+    app:layoutDescription="@xml/profile_fragment_scene">
 
     <TextView
-        android:id="@+id/count_device"
-        android:layout_width="wrap_content"
+        android:id="@+id/name_up"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:text="20 устройств"
-        android:textColor="@color/colorNumberHistory"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/ava"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
-
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="40dp"
+        android:alpha="0.0"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:text="4180309341"
         android:textColor="@color/colorText"
         android:textSize="22sp"
-        app:layout_constraintStart_toEndOf="@+id/ava"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/ava"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="wrap_content"
+        android:alpha="1.0"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile_icon" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/count_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="12dp"
+            android:text="20 устройств"
+            android:textColor="@color/colorNumberHistory"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/ava"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <ImageView
+            android:id="@+id/ava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile_icon" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="4180309341"
+            android:textColor="@color/colorText"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/ava"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
+        android:id="@+id/scroll_profile"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:overScrollMode="never"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/count_device">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,7 +89,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="48dp"
                 android:layout_marginRight="16dp"
                 app:cardBackgroundColor="@color/colorBackItem"
                 app:cardCornerRadius="15dp"
@@ -316,4 +346,5 @@
 
         </LinearLayout>
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
