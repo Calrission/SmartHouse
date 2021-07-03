@@ -90,6 +90,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_scene"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="50dp"
+                android:overScrollMode="never"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_down" />
+
             <include
                 android:id="@+id/menu_tags"
                 layout="@layout/menu_tags"
@@ -102,15 +112,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/menu_down" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rec_scene"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="50dp"
-                android:overScrollMode="never"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menu_down" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
