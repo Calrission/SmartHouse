@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorBackFAV">#999999</color>
+    <color name="colorBackAlpha">#65000000</color>
+    <color name="colorBackAlpha2">#C4000000</color>
+    <color name="colorBackSearch">#1A1A1A</color>
+    <color name="colorTintFAV">#FFFFFF</color>
+    <color name="colorGradient1">#10172A</color>
+    <color name="colorGradient1_5">#070D1B</color>
+    <color name="colorGradient2">#04090D</color>
+    <color name="colorSelectBottomNavigationView">#797979</color>
+    <color name="colorBottomNavigationView">#676767</color>
+    <color name="colorSelectTab">#F8FCFF</color>
+    <color name="colorTab">#65696C</color>
+    <color name="colorTextWeather">#646977</color>
+    <color name="colorDotsHistory">#666666</color>
+    <color name="colorTextHistory">#7E7E7E</color>
+    <color name="colorLineHistory">#272727</color>
+    <color name="colorNumberHistory">#C7C7C7</color>
+    <color name="colorBackItem">#1A1A1A</color>
+    <color name="colorBackItem2">#262626</color>
+    <color name="colorBackAccent">#53A8AF</color>
+    <color name="colorTintBell">#585858</color>
+    <color name="colorTintBellBright">#9D9D9F</color>
+    <color name="colorText">#FFF</color>
+    <color name="colorHint">#525253</color>
+    <color name="colorTextToolbar">#1A1A1A</color>
+    <color name="colorAccent">#7FB2B5</color>
+    <color name="colorBack">#000</color>
+    <color name="colorSwitch">#52A7AD</color>
+    <color name="colorSwitchAlpha">#3152A7AD</color>
+</resources>

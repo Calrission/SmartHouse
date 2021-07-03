@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:icon="@drawable/selector_home"
+        android:title="Mi Home"/>
+
+    <item android:id="@+id/scene"
+        android:icon="@drawable/selector_scene"
+        android:title="Scene"/>
+
+    <item android:id="@+id/profile"
+        android:icon="@drawable/selector_profile"
+        android:title="Профиль"/>
+</menu>
